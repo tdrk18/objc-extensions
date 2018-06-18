@@ -19,14 +19,22 @@ static NSNumberFormatter *formatter;
 
 - (NSString *)commaSeparatedString
 {
-    formatter.numberStyle = NSNumberFormatterDecimalStyle;
-    return [formatter stringFromNumber:self];
+    return [self formattedStringWithStyle:NSNumberFormatterDecimalStyle
+                         localeIdentifier:@"ja_JP"];
 }
 
 - (NSString *)JPYString
 {
-    formatter.numberStyle = NSNumberFormatterDecimalStyle;
-    return [NSString stringWithFormat:@"¥%@", [formatter stringFromNumber:self]];
+    return [self formattedStringWithStyle:NSNumberFormatterCurrencyStyle
+                         localeIdentifier:@"ja_JP"];
+}
+
+- (NSString *)formattedStringWithStyle:(NSNumberFormatterStyle)style
+                      localeIdentifier:(NSString *)identifier
+{
+    formatter.numberStyle = style;
+    formatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:identifier];
+    return [formatter stringFromNumber:self];
 }
 
 @end
