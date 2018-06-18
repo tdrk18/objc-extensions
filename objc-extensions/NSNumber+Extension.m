@@ -23,4 +23,10 @@ static NSNumberFormatter *formatter;
     return [formatter stringFromNumber:self];
 }
 
+- (NSString *)JPYString
+{
+    formatter.numberStyle = NSNumberFormatterDecimalStyle;
+    return [NSString stringWithFormat:@"¥%@", [formatter stringFromNumber:self]];
+}
+
 @end

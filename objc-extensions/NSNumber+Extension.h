@@ -11,5 +11,6 @@
 @interface NSNumber (Extension)
 
 - (NSString *)commaSeparatedString;
+- (NSString *)JPYString;
 
 @end
