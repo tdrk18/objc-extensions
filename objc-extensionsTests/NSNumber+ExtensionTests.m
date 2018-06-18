@@ -69,4 +69,25 @@
     XCTAssertEqualObjects(expect, actual);
 }
 
+- (void)testUSDString
+{
+    NSNumber *number;
+    NSString *expect, *actual;
+
+    number = @(500);
+    expect = @"$500.00";
+    actual = number.USDString;
+    XCTAssertEqualObjects(expect, actual);
+
+    number = @(5000);
+    expect = @"$5,000.00";
+    actual = number.USDString;
+    XCTAssertEqualObjects(expect, actual);
+
+    number = @(5000000);
+    expect = @"$5,000,000.00";
+    actual = number.USDString;
+    XCTAssertEqualObjects(expect, actual);
+}
+
 @end

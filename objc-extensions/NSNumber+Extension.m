@@ -29,6 +29,12 @@ static NSNumberFormatter *formatter;
                          localeIdentifier:@"ja_JP"];
 }
 
+- (NSString *)USDString
+{
+    return [self formattedStringWithStyle:NSNumberFormatterCurrencyStyle
+                         localeIdentifier:@"en_US"];
+}
+
 - (NSString *)formattedStringWithStyle:(NSNumberFormatterStyle)style
                       localeIdentifier:(NSString *)identifier
 {

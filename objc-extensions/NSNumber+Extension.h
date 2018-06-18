@@ -12,5 +12,6 @@
 
 - (NSString *)commaSeparatedString;
 - (NSString *)JPYString;
+- (NSString *)USDString;
 
 @end
