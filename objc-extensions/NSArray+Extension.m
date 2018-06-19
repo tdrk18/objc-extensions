@@ -27,4 +27,15 @@
     return [self sortedArrayUsingDescriptors:@[descriptor]];
 }
 
+- (NSArray *)unique
+{
+    NSMutableArray *unique = [NSMutableArray arrayWithCapacity:self.count];
+    for (id value in self) {
+        if (![unique containsObject:value]) {
+            [unique addObject:value];
+        }
+    }
+    return [unique copy];
+}
+
 @end

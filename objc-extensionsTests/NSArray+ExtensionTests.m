@@ -97,4 +97,34 @@
     XCTAssertEqualObjects(expect, actual);
 }
 
+- (void)testUnique
+{
+    NSArray *expect, *actual, *array;
+
+    array = @[];
+    expect = @[];
+    actual = [array unique];
+    XCTAssertEqualObjects(expect, actual);
+
+    array = @[@1, @2, @3, @4];
+    expect = @[@1, @2, @3, @4];
+    actual = [array unique];
+    XCTAssertEqualObjects(expect, actual);
+
+    array = @[@1, @3, @5, @7, @1];
+    expect = @[@1, @3, @5, @7];
+    actual = [array unique];
+    XCTAssertEqualObjects(expect, actual);
+
+    array = @[@"t", @"d", @"r", @"k"];
+    expect = @[@"t", @"d", @"r", @"k"];
+    actual = [array unique];
+    XCTAssertEqualObjects(expect, actual);
+
+    array = @[@"t", @"d", @"r", @"k", @"d", @"t"];
+    expect = @[@"t", @"d", @"r", @"k"];
+    actual = [array unique];
+    XCTAssertEqualObjects(expect, actual);
+}
+
 @end
