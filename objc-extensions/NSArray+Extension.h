@@ -12,5 +12,6 @@
 
 - (NSArray *)reverse;
 - (NSArray *)sortAsc;
+- (NSArray *)sortDesc;
 
 @end

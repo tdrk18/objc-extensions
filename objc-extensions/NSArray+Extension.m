@@ -21,4 +21,10 @@
     return [self sortedArrayUsingDescriptors:@[descriptor]];
 }
 
+- (NSArray *)sortDesc
+{
+    NSSortDescriptor *descriptor = [[NSSortDescriptor alloc] initWithKey:nil ascending:NO];
+    return [self sortedArrayUsingDescriptors:@[descriptor]];
+}
+
 @end
