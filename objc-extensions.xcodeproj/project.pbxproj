@@ -16,6 +16,8 @@
 		B9068F3320D7F77A007010AD /* objc_extensionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9068F3220D7F77A007010AD /* objc_extensionsTests.m */; };
 		B9068F3F20D7F9F2007010AD /* NSNumber+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = B9068F3E20D7F9F2007010AD /* NSNumber+Extension.m */; };
 		B9068F4120D7FED1007010AD /* NSNumber+ExtensionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9068F4020D7FED1007010AD /* NSNumber+ExtensionTests.m */; };
+		B9068F4420D93901007010AD /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = B9068F4320D93901007010AD /* NSString+Extension.m */; };
+		B9068F4620D9395A007010AD /* NSString+ExtensionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9068F4520D9395A007010AD /* NSString+ExtensionTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,9 @@
 		B9068F3D20D7F9E6007010AD /* NSNumber+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Extension.h"; sourceTree = "<group>"; };
 		B9068F3E20D7F9F2007010AD /* NSNumber+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Extension.m"; sourceTree = "<group>"; };
 		B9068F4020D7FED1007010AD /* NSNumber+ExtensionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+ExtensionTests.m"; sourceTree = "<group>"; };
+		B9068F4220D938EA007010AD /* NSString+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
+		B9068F4320D93901007010AD /* NSString+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
+		B9068F4520D9395A007010AD /* NSString+ExtensionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+ExtensionTests.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +102,8 @@
 				B9068F2820D7F77A007010AD /* main.m */,
 				B9068F3D20D7F9E6007010AD /* NSNumber+Extension.h */,
 				B9068F3E20D7F9F2007010AD /* NSNumber+Extension.m */,
+				B9068F4220D938EA007010AD /* NSString+Extension.h */,
+				B9068F4320D93901007010AD /* NSString+Extension.m */,
 			);
 			path = "objc-extensions";
 			sourceTree = "<group>";
@@ -107,6 +114,7 @@
 				B9068F3220D7F77A007010AD /* objc_extensionsTests.m */,
 				B9068F3420D7F77A007010AD /* Info.plist */,
 				B9068F4020D7FED1007010AD /* NSNumber+ExtensionTests.m */,
+				B9068F4520D9395A007010AD /* NSString+ExtensionTests.m */,
 			);
 			path = "objc-extensionsTests";
 			sourceTree = "<group>";
@@ -211,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9068F4420D93901007010AD /* NSString+Extension.m in Sources */,
 				B9068F1E20D7F779007010AD /* ViewController.m in Sources */,
 				B9068F3F20D7F9F2007010AD /* NSNumber+Extension.m in Sources */,
 				B9068F2920D7F77A007010AD /* main.m in Sources */,
@@ -222,6 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9068F4620D9395A007010AD /* NSString+ExtensionTests.m in Sources */,
 				B9068F3320D7F77A007010AD /* objc_extensionsTests.m in Sources */,
 				B9068F4120D7FED1007010AD /* NSNumber+ExtensionTests.m in Sources */,
 			);
@@ -371,6 +381,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J5G949794M;
 				INFOPLIST_FILE = "objc-extensions/Info.plist";
@@ -380,6 +391,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "tdrk18.objc-extensions";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -388,6 +400,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J5G949794M;
 				INFOPLIST_FILE = "objc-extensions/Info.plist";
@@ -397,6 +410,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "tdrk18.objc-extensions";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
