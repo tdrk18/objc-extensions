@@ -18,6 +18,8 @@
 		B9068F4120D7FED1007010AD /* NSNumber+ExtensionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9068F4020D7FED1007010AD /* NSNumber+ExtensionTests.m */; };
 		B9068F4420D93901007010AD /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = B9068F4320D93901007010AD /* NSString+Extension.m */; };
 		B9068F4620D9395A007010AD /* NSString+ExtensionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9068F4520D9395A007010AD /* NSString+ExtensionTests.m */; };
+		B9068F4920D94C18007010AD /* NSArray+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = B9068F4820D94C18007010AD /* NSArray+Extension.m */; };
+		B9068F4B20D94C29007010AD /* NSArray+ExtensionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9068F4A20D94C29007010AD /* NSArray+ExtensionTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,9 @@
 		B9068F4220D938EA007010AD /* NSString+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
 		B9068F4320D93901007010AD /* NSString+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
 		B9068F4520D9395A007010AD /* NSString+ExtensionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+ExtensionTests.m"; sourceTree = "<group>"; };
+		B9068F4720D94C0A007010AD /* NSArray+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+Extension.h"; sourceTree = "<group>"; };
+		B9068F4820D94C18007010AD /* NSArray+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Extension.m"; sourceTree = "<group>"; };
+		B9068F4A20D94C29007010AD /* NSArray+ExtensionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ExtensionTests.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +109,8 @@
 				B9068F3E20D7F9F2007010AD /* NSNumber+Extension.m */,
 				B9068F4220D938EA007010AD /* NSString+Extension.h */,
 				B9068F4320D93901007010AD /* NSString+Extension.m */,
+				B9068F4720D94C0A007010AD /* NSArray+Extension.h */,
+				B9068F4820D94C18007010AD /* NSArray+Extension.m */,
 			);
 			path = "objc-extensions";
 			sourceTree = "<group>";
@@ -115,6 +122,7 @@
 				B9068F3420D7F77A007010AD /* Info.plist */,
 				B9068F4020D7FED1007010AD /* NSNumber+ExtensionTests.m */,
 				B9068F4520D9395A007010AD /* NSString+ExtensionTests.m */,
+				B9068F4A20D94C29007010AD /* NSArray+ExtensionTests.m */,
 			);
 			path = "objc-extensionsTests";
 			sourceTree = "<group>";
@@ -219,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9068F4920D94C18007010AD /* NSArray+Extension.m in Sources */,
 				B9068F4420D93901007010AD /* NSString+Extension.m in Sources */,
 				B9068F1E20D7F779007010AD /* ViewController.m in Sources */,
 				B9068F3F20D7F9F2007010AD /* NSNumber+Extension.m in Sources */,
@@ -233,6 +242,7 @@
 			files = (
 				B9068F4620D9395A007010AD /* NSString+ExtensionTests.m in Sources */,
 				B9068F3320D7F77A007010AD /* objc_extensionsTests.m in Sources */,
+				B9068F4B20D94C29007010AD /* NSArray+ExtensionTests.m in Sources */,
 				B9068F4120D7FED1007010AD /* NSNumber+ExtensionTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
