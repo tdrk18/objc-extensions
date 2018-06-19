@@ -15,4 +15,9 @@
     return [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 }
 
+- (BOOL)hasOnlyWhiteSpace
+{
+    return [[self trimmedWhiteSpace] length] == 0;
+}
+
 @end

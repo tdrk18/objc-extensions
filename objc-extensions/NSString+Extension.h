@@ -11,5 +11,6 @@
 @interface NSString (Extension)
 
 - (NSString *)trimmedWhiteSpace;
+- (BOOL)hasOnlyWhiteSpace;
 
 @end

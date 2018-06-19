@@ -45,4 +45,25 @@
     XCTAssertEqualObjects(expect, actual);
 }
 
+- (void)testHasOnlyWhiteSpace
+{
+    NSString *string;
+    BOOL expect, actual;
+
+    string = @"";
+    expect = YES;
+    actual = [string hasOnlyWhiteSpace];
+    XCTAssertEqual(expect, actual);
+
+    string = @"   ";
+    expect = YES;
+    actual = [string hasOnlyWhiteSpace];
+    XCTAssertEqual(expect, actual);
+
+    string = @" tdrk18 ";
+    expect = NO;
+    actual = [string hasOnlyWhiteSpace];
+    XCTAssertEqual(expect, actual);
+}
+
 @end
