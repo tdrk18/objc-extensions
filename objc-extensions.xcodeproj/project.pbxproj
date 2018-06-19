@@ -14,6 +14,8 @@
 		B9068F2620D7F77A007010AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9068F2420D7F77A007010AD /* LaunchScreen.storyboard */; };
 		B9068F2920D7F77A007010AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9068F2820D7F77A007010AD /* main.m */; };
 		B9068F3320D7F77A007010AD /* objc_extensionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9068F3220D7F77A007010AD /* objc_extensionsTests.m */; };
+		B9068F3F20D7F9F2007010AD /* NSNumber+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = B9068F3E20D7F9F2007010AD /* NSNumber+Extension.m */; };
+		B9068F4120D7FED1007010AD /* NSNumber+ExtensionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9068F4020D7FED1007010AD /* NSNumber+ExtensionTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		B9068F2E20D7F77A007010AD /* objc-extensionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "objc-extensionsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9068F3220D7F77A007010AD /* objc_extensionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = objc_extensionsTests.m; sourceTree = "<group>"; };
 		B9068F3420D7F77A007010AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9068F3D20D7F9E6007010AD /* NSNumber+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Extension.h"; sourceTree = "<group>"; };
+		B9068F3E20D7F9F2007010AD /* NSNumber+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Extension.m"; sourceTree = "<group>"; };
+		B9068F4020D7FED1007010AD /* NSNumber+ExtensionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+ExtensionTests.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +95,8 @@
 				B9068F2420D7F77A007010AD /* LaunchScreen.storyboard */,
 				B9068F2720D7F77A007010AD /* Info.plist */,
 				B9068F2820D7F77A007010AD /* main.m */,
+				B9068F3D20D7F9E6007010AD /* NSNumber+Extension.h */,
+				B9068F3E20D7F9F2007010AD /* NSNumber+Extension.m */,
 			);
 			path = "objc-extensions";
 			sourceTree = "<group>";
@@ -99,6 +106,7 @@
 			children = (
 				B9068F3220D7F77A007010AD /* objc_extensionsTests.m */,
 				B9068F3420D7F77A007010AD /* Info.plist */,
+				B9068F4020D7FED1007010AD /* NSNumber+ExtensionTests.m */,
 			);
 			path = "objc-extensionsTests";
 			sourceTree = "<group>";
@@ -204,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9068F1E20D7F779007010AD /* ViewController.m in Sources */,
+				B9068F3F20D7F9F2007010AD /* NSNumber+Extension.m in Sources */,
 				B9068F2920D7F77A007010AD /* main.m in Sources */,
 				B9068F1B20D7F779007010AD /* AppDelegate.m in Sources */,
 			);
@@ -214,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9068F3320D7F77A007010AD /* objc_extensionsTests.m in Sources */,
+				B9068F4120D7FED1007010AD /* NSNumber+ExtensionTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
