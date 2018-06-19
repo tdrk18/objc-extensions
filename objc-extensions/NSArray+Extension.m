@@ -15,4 +15,10 @@
     return [[self reverseObjectEnumerator] allObjects];
 }
 
+- (NSArray *)sortAsc
+{
+    NSSortDescriptor *descriptor = [[NSSortDescriptor alloc] initWithKey:nil ascending:YES];
+    return [self sortedArrayUsingDescriptors:@[descriptor]];
+}
+
 @end

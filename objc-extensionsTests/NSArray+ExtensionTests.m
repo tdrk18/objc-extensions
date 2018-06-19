@@ -47,4 +47,29 @@
     XCTAssertEqualObjects(expect, actual);
 }
 
+- (void)testSortAsc
+{
+    NSArray *expect, *actual, *array;
+
+    array = @[];
+    expect = @[];
+    actual = [array sortAsc];
+    XCTAssertEqualObjects(expect, actual);
+
+    array = @[@1, @2, @3, @4];
+    expect = @[@1, @2, @3, @4];
+    actual = [array sortAsc];
+    XCTAssertEqualObjects(expect, actual);
+
+    array = @[@1, @3, @5, @7, @1];
+    expect = @[@1, @1, @3, @5, @7];
+    actual = [array sortAsc];
+    XCTAssertEqualObjects(expect, actual);
+
+    array = @[@"t", @"d", @"r", @"k"];
+    expect = @[@"d", @"k", @"r", @"t"];
+    actual = [array sortAsc];
+    XCTAssertEqualObjects(expect, actual);
+}
+
 @end

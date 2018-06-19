@@ -11,5 +11,6 @@
 @interface NSArray (Extension)
 
 - (NSArray *)reverse;
+- (NSArray *)sortAsc;
 
 @end
