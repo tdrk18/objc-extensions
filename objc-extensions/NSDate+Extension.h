@@ -11,7 +11,9 @@
 @interface NSDate (Extension)
 
 + (NSDate *)dateFromISOString:(NSString *)isoString;
++ (NSDate *)dateFromISODayString:(NSString *)isoString;
 
 - (NSString *)toISOString;
+- (NSString *)toISODayString;
 
 @end

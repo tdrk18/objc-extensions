@@ -27,10 +27,26 @@ static NSDateFormatter *dateFormatter;
     return [isoDateFormatter dateFromString:isoString];
 }
 
++ (NSDate *)dateFromISODayString:(NSString *)isoString
+{
+    NSString *format = @"yyyy-MM-dd";
+    NSString *locale = @"en_US";
+    NSDateFormatter *isoDateFormatter = [self formatterWithFormat:format locale:locale];
+    return [isoDateFormatter dateFromString:isoString];
+}
+
 #pragma mark - instance methods
 - (NSString *)toISOString
 {
     NSString *format = @"yyyy-MM-dd HH:mm:ss";
+    NSString *locale = @"en_US";
+    NSDateFormatter *isoDateFormatter = [NSDate formatterWithFormat:format locale:locale];
+    return [isoDateFormatter stringFromDate:self];
+}
+
+- (NSString *)toISODayString
+{
+    NSString *format = @"yyyy-MM-dd";
     NSString *locale = @"en_US";
     NSDateFormatter *isoDateFormatter = [NSDate formatterWithFormat:format locale:locale];
     return [isoDateFormatter stringFromDate:self];

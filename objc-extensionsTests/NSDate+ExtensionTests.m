@@ -39,6 +39,17 @@
     XCTAssertEqualObjects(expect, actual);
 }
 
+- (void)testDateFromISODayString
+{
+    NSString *dateString;
+    NSDate *expect, *actual;
+
+    dateString = @"1970-01-01";
+    expect = [self toLocalTime:[[NSDate alloc] initWithTimeIntervalSince1970:0]];
+    actual = [NSDate dateFromISODayString:dateString];
+    XCTAssertEqualObjects(expect, actual);
+}
+
 #pragma mark - tests for instance methods
 - (void)testToISOString
 {
@@ -48,6 +59,17 @@
     date = [self toLocalTime:[[NSDate alloc] initWithTimeIntervalSince1970:0]];
     expect = @"1970-01-01 00:00:00";
     actual = [date toISOString];
+    XCTAssertEqualObjects(expect, actual);
+}
+
+- (void)testToISODayString
+{
+    NSDate *date;
+    NSString *expect, *actual;
+
+    date = [self toLocalTime:[[NSDate alloc] initWithTimeIntervalSince1970:0]];
+    expect = @"1970-01-01";
+    actual = [date toISODayString];
     XCTAssertEqualObjects(expect, actual);
 }
 
