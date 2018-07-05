@@ -73,6 +73,39 @@
     XCTAssertEqualObjects(expect, actual);
 }
 
+- (void)testToYMDString
+{
+    NSDate *date;
+    NSString *expect, *actual;
+
+    date = [self toLocalTime:[[NSDate alloc] initWithTimeIntervalSince1970:0]];
+    expect = @"1970年1月1日";
+    actual = [date toYMDString];
+    XCTAssertEqualObjects(expect, actual);
+}
+
+- (void)testToYMString
+{
+    NSDate *date;
+    NSString *expect, *actual;
+
+    date = [self toLocalTime:[[NSDate alloc] initWithTimeIntervalSince1970:0]];
+    expect = @"1970年1月";
+    actual = [date toYMString];
+    XCTAssertEqualObjects(expect, actual);
+}
+
+- (void)testToMDString
+{
+    NSDate *date;
+    NSString *expect, *actual;
+
+    date = [self toLocalTime:[[NSDate alloc] initWithTimeIntervalSince1970:0]];
+    expect = @"1月1日";
+    actual = [date toMDString];
+    XCTAssertEqualObjects(expect, actual);
+}
+
 #pragma mark - private methods
 - (NSDate *)toGlobalTime:(NSDate *)date
 {

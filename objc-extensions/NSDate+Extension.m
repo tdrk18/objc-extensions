@@ -52,6 +52,30 @@ static NSDateFormatter *dateFormatter;
     return [isoDateFormatter stringFromDate:self];
 }
 
+- (NSString *)toYMDString
+{
+    NSString *format = @"yyyy年M月d日";
+    NSString *locale = @"ja_JP";
+    NSDateFormatter *isoDateFormatter = [NSDate formatterWithFormat:format locale:locale];
+    return [isoDateFormatter stringFromDate:self];
+}
+
+- (NSString *)toYMString
+{
+    NSString *format = @"yyyy年M月";
+    NSString *locale = @"ja_JP";
+    NSDateFormatter *isoDateFormatter = [NSDate formatterWithFormat:format locale:locale];
+    return [isoDateFormatter stringFromDate:self];
+}
+
+- (NSString *)toMDString
+{
+    NSString *format = @"M月d日";
+    NSString *locale = @"ja_JP";
+    NSDateFormatter *isoDateFormatter = [NSDate formatterWithFormat:format locale:locale];
+    return [isoDateFormatter stringFromDate:self];
+}
+
 #pragma mark - private methods
 + (NSDateFormatter *)formatterWithFormat:(NSString *)format
                                   locale:(NSString *)locale
