@@ -10,8 +10,15 @@
 
 @interface NSDate (Extension)
 
++ (NSDate *)dateWithString:(NSString *)string
+                    format:(NSString *)format
+                    locale:(NSString *)locale;
+
 + (NSDate *)dateFromISOString:(NSString *)isoString;
 + (NSDate *)dateFromISODayString:(NSString *)isoString;
+
+- (NSString *)toStringWithFormat:(NSString *)format
+                          locale:(NSString *)locale;
 
 - (NSString *)toISOString;
 - (NSString *)toISODayString;
