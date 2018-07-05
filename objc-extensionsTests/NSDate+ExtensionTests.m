@@ -84,6 +84,17 @@
     XCTAssertEqualObjects(expect, actual);
 }
 
+- (void)testToYMDTimeString
+{
+    NSDate *date;
+    NSString *expect, *actual;
+
+    date = [self toLocalTime:[[NSDate alloc] initWithTimeIntervalSince1970:0]];
+    expect = @"1970年1月1日 0:00";
+    actual = [date toYMDTimeString];
+    XCTAssertEqualObjects(expect, actual);
+}
+
 - (void)testToYMString
 {
     NSDate *date;
@@ -103,6 +114,17 @@
     date = [self toLocalTime:[[NSDate alloc] initWithTimeIntervalSince1970:0]];
     expect = @"1月1日";
     actual = [date toMDString];
+    XCTAssertEqualObjects(expect, actual);
+}
+
+- (void)testToMDTimeString
+{
+    NSDate *date;
+    NSString *expect, *actual;
+
+    date = [self toLocalTime:[[NSDate alloc] initWithTimeIntervalSince1970:0]];
+    expect = @"1月1日 0:00";
+    actual = [date toMDTimeString];
     XCTAssertEqualObjects(expect, actual);
 }
 

@@ -16,7 +16,9 @@
 - (NSString *)toISOString;
 - (NSString *)toISODayString;
 - (NSString *)toYMDString;
+- (NSString *)toYMDTimeString;
 - (NSString *)toYMString;
 - (NSString *)toMDString;
+- (NSString *)toMDTimeString;
 
 @end
