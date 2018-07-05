@@ -128,6 +128,26 @@
     XCTAssertEqualObjects(expect, actual);
 }
 
+- (void)testStartOfDay
+{
+    NSDate *expect, *actual, *date;
+
+    date = [self toLocalTime:[[NSDate alloc] initWithTimeIntervalSince1970:0]];
+    expect = [self toLocalTime:[[NSDate alloc] initWithTimeIntervalSince1970:0]];
+    actual = [date startOfDay];
+    XCTAssertEqualObjects(expect, actual);
+}
+
+- (void)testEndOfDay
+{
+    NSDate *expect, *actual, *date;
+
+    date = [self toLocalTime:[[NSDate alloc] initWithTimeIntervalSince1970:0]];
+    expect = [[self toLocalTime:[[NSDate alloc] initWithTimeIntervalSince1970:0]] dateByAddingTimeInterval:(60 * 60 * 24 - 1)];
+    actual = [date endOfDay];
+    XCTAssertEqualObjects(expect, actual);
+}
+
 #pragma mark - private methods
 - (NSDate *)toGlobalTime:(NSDate *)date
 {

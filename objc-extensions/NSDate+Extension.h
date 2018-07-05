@@ -28,4 +28,7 @@
 - (NSString *)toMDString;
 - (NSString *)toMDTimeString;
 
+- (NSDate *)startOfDay;
+- (NSDate *)endOfDay;
+
 @end

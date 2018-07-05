@@ -98,6 +98,20 @@ static NSDateFormatter *dateFormatter;
     return [self toStringWithFormat:format locale:locale];
 }
 
+- (NSDate *)startOfDay
+{
+    return [[NSCalendar currentCalendar] startOfDayForDate:self];
+}
+
+- (NSDate *)endOfDay
+{
+    NSDateComponents *components = [[NSDateComponents alloc] init];
+    components.hour = 23;
+    components.minute = 59;
+    components.second = 59;
+    return [[NSCalendar currentCalendar] dateByAddingComponents:components toDate:[self startOfDay] options:0];
+}
+
 #pragma mark - private methods
 + (NSDateFormatter *)formatterWithFormat:(NSString *)format
                                   locale:(NSString *)locale
