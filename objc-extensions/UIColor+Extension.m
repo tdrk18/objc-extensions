@@ -31,12 +31,17 @@
                                alpha:1.0];
 }
 
-+ (UIColor *)colorWithHex:(unsigned int)hex
++ (UIColor *)colorWithHex:(unsigned int)hex alpha:(CGFloat)alpha
 {
     return [UIColor colorWithByteRed:hex >> 16 & 0xff
                                green:hex >>  8 & 0xff
                                 blue:hex >>  0 & 0xff
-                               alpha:1.0];
+                               alpha:alpha];
+}
+
++ (UIColor *)colorWithHex:(unsigned int)hex
+{
+    return [UIColor colorWithHex:hex alpha:1.0];
 }
 
 @end

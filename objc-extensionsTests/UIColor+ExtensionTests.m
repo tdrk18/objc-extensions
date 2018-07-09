@@ -167,6 +167,52 @@
     XCTAssertEqualObjects(actual, expect);
 }
 
+- (void)testColorWithHexAndAlpha
+{
+    UIColor *expect, *actual;
+    unsigned int hex;
+
+    hex = 0xff0000;
+    actual = [UIColor colorWithHex:hex alpha:1.0];
+    expect = [UIColor redColor];
+    XCTAssertEqualObjects(actual, expect);
+
+    hex = 0x00ff00;
+    actual = [UIColor colorWithHex:hex alpha:1.0];
+    expect = [UIColor greenColor];
+    XCTAssertEqualObjects(actual, expect);
+
+    hex = 0x0000ff;
+    actual = [UIColor colorWithHex:hex alpha:1.0];
+    expect = [UIColor blueColor];
+    XCTAssertEqualObjects(actual, expect);
+
+    hex = 0xffffff;
+    actual = [UIColor colorWithHex:hex alpha:1.0];
+    expect = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0];
+    XCTAssertEqualObjects(actual, expect);
+
+    hex = 0x000000;
+    actual = [UIColor colorWithHex:hex alpha:1.0];
+    expect = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:1.0];
+    XCTAssertEqualObjects(actual, expect);
+
+    hex = 0xffff00;
+    actual = [UIColor colorWithHex:hex alpha:1.0];
+    expect = [UIColor yellowColor];
+    XCTAssertEqualObjects(actual, expect);
+
+    hex = 0x00ffff;
+    actual = [UIColor colorWithHex:hex alpha:1.0];
+    expect = [UIColor cyanColor];
+    XCTAssertEqualObjects(actual, expect);
+
+    hex = 0xff00ff;
+    actual = [UIColor colorWithHex:hex alpha:1.0];
+    expect = [UIColor magentaColor];
+    XCTAssertEqualObjects(actual, expect);
+}
+
 - (void)testColorWithHex
 {
     UIColor *expect, *actual;

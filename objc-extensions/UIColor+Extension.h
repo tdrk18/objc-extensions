@@ -18,6 +18,7 @@
                         green:(unsigned int)green
                          blue:(unsigned int)blue;
 
++ (UIColor *)colorWithHex:(unsigned int)hex alpha:(CGFloat)alpha;
 + (UIColor *)colorWithHex:(unsigned int)hex;
 
 @end
