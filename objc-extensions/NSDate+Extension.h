@@ -31,4 +31,8 @@
 - (NSDate *)startOfDay;
 - (NSDate *)endOfDay;
 
+- (BOOL)isBefore:(NSDate *)date;
+- (BOOL)isAfter:(NSDate *)date;
+- (BOOL)isFuture;
+
 @end

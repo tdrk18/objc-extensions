@@ -148,6 +148,75 @@
     XCTAssertEqualObjects(expect, actual);
 }
 
+- (void)testIsBefore
+{
+    NSDate *date1, *date2;
+    BOOL expect, actual;
+
+    date1 = [self toLocalTime:[[NSDate alloc] initWithTimeIntervalSince1970:0]];
+    date2 = [self toLocalTime:[[NSDate alloc] initWithTimeIntervalSince1970:0]];
+    expect = NO;
+    actual = [date1 isBefore:date2];
+    XCTAssertEqual(expect, actual);
+
+    date1 = [self toLocalTime:[[NSDate alloc] initWithTimeIntervalSince1970:0]];
+    date2 = [[self toLocalTime:[[NSDate alloc] initWithTimeIntervalSince1970:0]] dateByAddingTimeInterval:-1];
+    expect = NO;
+    actual = [date1 isBefore:date2];
+    XCTAssertEqual(expect, actual);
+
+    date1 = [self toLocalTime:[[NSDate alloc] initWithTimeIntervalSince1970:0]];
+    date2 = [[self toLocalTime:[[NSDate alloc] initWithTimeIntervalSince1970:0]] dateByAddingTimeInterval:1];
+    expect = YES;
+    actual = [date1 isBefore:date2];
+    XCTAssertEqual(expect, actual);
+}
+
+- (void)testIsAfter
+{
+    NSDate *date1, *date2;
+    BOOL expect, actual;
+
+    date1 = [self toLocalTime:[[NSDate alloc] initWithTimeIntervalSince1970:0]];
+    date2 = [self toLocalTime:[[NSDate alloc] initWithTimeIntervalSince1970:0]];
+    expect = NO;
+    actual = [date1 isAfter:date2];
+    XCTAssertEqual(expect, actual);
+
+    date1 = [self toLocalTime:[[NSDate alloc] initWithTimeIntervalSince1970:0]];
+    date2 = [[self toLocalTime:[[NSDate alloc] initWithTimeIntervalSince1970:0]] dateByAddingTimeInterval:-1];
+    expect = YES;
+    actual = [date1 isAfter:date2];
+    XCTAssertEqual(expect, actual);
+
+    date1 = [self toLocalTime:[[NSDate alloc] initWithTimeIntervalSince1970:0]];
+    date2 = [[self toLocalTime:[[NSDate alloc] initWithTimeIntervalSince1970:0]] dateByAddingTimeInterval:1];
+    expect = NO;
+    actual = [date1 isAfter:date2];
+    XCTAssertEqual(expect, actual);
+}
+
+- (void)testIsFuture
+{
+    NSDate *date;
+    BOOL expect, actual;
+
+    date = [self toLocalTime:[[NSDate alloc] initWithTimeIntervalSinceNow:0]];
+    expect = NO;
+    actual = [date isFuture];
+    XCTAssertEqual(expect, actual);
+
+    date = [self toLocalTime:[[NSDate alloc] initWithTimeIntervalSinceNow:-60]];
+    expect = NO;
+    actual = [date isFuture];
+    XCTAssertEqual(expect, actual);
+
+    date = [[NSDate alloc] initWithTimeIntervalSinceNow:60];
+    expect = YES;
+    actual = [date isFuture];
+    XCTAssertEqual(expect, actual);
+}
+
 #pragma mark - private methods
 - (NSDate *)toGlobalTime:(NSDate *)date
 {

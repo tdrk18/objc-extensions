@@ -112,6 +112,21 @@ static NSDateFormatter *dateFormatter;
     return [[NSCalendar currentCalendar] dateByAddingComponents:components toDate:[self startOfDay] options:0];
 }
 
+- (BOOL)isBefore:(NSDate *)date
+{
+    return [self compare:date] == NSOrderedAscending;
+}
+
+- (BOOL)isAfter:(NSDate *)date
+{
+    return [self compare:date] == NSOrderedDescending;
+}
+
+- (BOOL)isFuture
+{
+    return [[NSDate date] isBefore:self];
+}
+
 #pragma mark - private methods
 + (NSDateFormatter *)formatterWithFormat:(NSString *)format
                                   locale:(NSString *)locale
