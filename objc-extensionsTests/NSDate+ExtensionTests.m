@@ -201,17 +201,17 @@
     NSDate *date;
     BOOL expect, actual;
 
-    date = [self toLocalTime:[[NSDate alloc] initWithTimeIntervalSinceNow:0]];
+    date = [[NSDate alloc] initWithTimeIntervalSinceNow:0];
     expect = NO;
     actual = [date isFuture];
     XCTAssertEqual(expect, actual);
 
-    date = [self toLocalTime:[[NSDate alloc] initWithTimeIntervalSinceNow:-60]];
+    date = [[NSDate alloc] initWithTimeIntervalSinceNow:-3600 * 10];
     expect = NO;
     actual = [date isFuture];
     XCTAssertEqual(expect, actual);
 
-    date = [[NSDate alloc] initWithTimeIntervalSinceNow:60];
+    date = [[NSDate alloc] initWithTimeIntervalSinceNow:3600 * 10];
     expect = YES;
     actual = [date isFuture];
     XCTAssertEqual(expect, actual);
