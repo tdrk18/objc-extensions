@@ -13,17 +13,16 @@
 		B9068F2320D7F77A007010AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9068F2220D7F77A007010AD /* Assets.xcassets */; };
 		B9068F2620D7F77A007010AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9068F2420D7F77A007010AD /* LaunchScreen.storyboard */; };
 		B9068F2920D7F77A007010AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9068F2820D7F77A007010AD /* main.m */; };
-		B9068F3320D7F77A007010AD /* objc_extensionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9068F3220D7F77A007010AD /* objc_extensionsTests.m */; };
 		B9068F3F20D7F9F2007010AD /* NSNumber+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = B9068F3E20D7F9F2007010AD /* NSNumber+Extension.m */; };
 		B9068F4120D7FED1007010AD /* NSNumber+ExtensionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9068F4020D7FED1007010AD /* NSNumber+ExtensionTests.m */; };
 		B9068F4420D93901007010AD /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = B9068F4320D93901007010AD /* NSString+Extension.m */; };
 		B9068F4620D9395A007010AD /* NSString+ExtensionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9068F4520D9395A007010AD /* NSString+ExtensionTests.m */; };
 		B9068F4920D94C18007010AD /* NSArray+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = B9068F4820D94C18007010AD /* NSArray+Extension.m */; };
 		B9068F4B20D94C29007010AD /* NSArray+ExtensionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9068F4A20D94C29007010AD /* NSArray+ExtensionTests.m */; };
-		F83CFA7F20EB90B90007C571 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = F83CFA7E20EB90B90007C571 /* NSDate+Extension.m */; };
-		F83CFA8120EB90CE0007C571 /* NSDate+ExtensionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F83CFA8020EB90CE0007C571 /* NSDate+ExtensionTests.m */; };
 		B9E15BCA20E5351300659436 /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E15BC920E5351300659436 /* UIColor+Extension.m */; };
 		B9E15BCC20E5353000659436 /* UIColor+ExtensionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E15BCB20E5353000659436 /* UIColor+ExtensionTests.m */; };
+		F83CFA7F20EB90B90007C571 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = F83CFA7E20EB90B90007C571 /* NSDate+Extension.m */; };
+		F83CFA8120EB90CE0007C571 /* NSDate+ExtensionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F83CFA8020EB90CE0007C571 /* NSDate+ExtensionTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +47,6 @@
 		B9068F2720D7F77A007010AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9068F2820D7F77A007010AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B9068F2E20D7F77A007010AD /* objc-extensionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "objc-extensionsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B9068F3220D7F77A007010AD /* objc_extensionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = objc_extensionsTests.m; sourceTree = "<group>"; };
 		B9068F3420D7F77A007010AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9068F3D20D7F9E6007010AD /* NSNumber+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Extension.h"; sourceTree = "<group>"; };
 		B9068F3E20D7F9F2007010AD /* NSNumber+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Extension.m"; sourceTree = "<group>"; };
@@ -59,12 +57,12 @@
 		B9068F4720D94C0A007010AD /* NSArray+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+Extension.h"; sourceTree = "<group>"; };
 		B9068F4820D94C18007010AD /* NSArray+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Extension.m"; sourceTree = "<group>"; };
 		B9068F4A20D94C29007010AD /* NSArray+ExtensionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ExtensionTests.m"; sourceTree = "<group>"; };
-		F83CFA7D20EB90AE0007C571 /* NSDate+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extension.h"; sourceTree = "<group>"; };
-		F83CFA7E20EB90B90007C571 /* NSDate+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extension.m"; sourceTree = "<group>"; };
-		F83CFA8020EB90CE0007C571 /* NSDate+ExtensionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ExtensionTests.m"; sourceTree = "<group>"; };
 		B9E15BC820E5350200659436 /* UIColor+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
 		B9E15BC920E5351300659436 /* UIColor+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
 		B9E15BCB20E5353000659436 /* UIColor+ExtensionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ExtensionTests.m"; sourceTree = "<group>"; };
+		F83CFA7D20EB90AE0007C571 /* NSDate+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extension.h"; sourceTree = "<group>"; };
+		F83CFA7E20EB90B90007C571 /* NSDate+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extension.m"; sourceTree = "<group>"; };
+		F83CFA8020EB90CE0007C571 /* NSDate+ExtensionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ExtensionTests.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,7 +130,6 @@
 		B9068F3120D7F77A007010AD /* objc-extensionsTests */ = {
 			isa = PBXGroup;
 			children = (
-				B9068F3220D7F77A007010AD /* objc_extensionsTests.m */,
 				B9068F3420D7F77A007010AD /* Info.plist */,
 				B9068F4020D7FED1007010AD /* NSNumber+ExtensionTests.m */,
 				B9068F4520D9395A007010AD /* NSString+ExtensionTests.m */,
@@ -261,7 +258,6 @@
 				B9E15BCC20E5353000659436 /* UIColor+ExtensionTests.m in Sources */,
 				B9068F4620D9395A007010AD /* NSString+ExtensionTests.m in Sources */,
 				F83CFA8120EB90CE0007C571 /* NSDate+ExtensionTests.m in Sources */,
-				B9068F3320D7F77A007010AD /* objc_extensionsTests.m in Sources */,
 				B9068F4B20D94C29007010AD /* NSArray+ExtensionTests.m in Sources */,
 				B9068F4120D7FED1007010AD /* NSNumber+ExtensionTests.m in Sources */,
 			);
